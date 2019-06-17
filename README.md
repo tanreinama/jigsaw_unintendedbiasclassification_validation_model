@@ -16,3 +16,12 @@ Training and saving model.
 Training use Nadam.
 `python3 cv_model.py -d model.bz2 -o Nadam`
 
+## Useful additions
+
+* lemma_dict-simbols.json
+
+List of Lemmas that can be converted to the alphabet. A dictionary for correcting the fluctuation of notations expressed by Cyrillic letters and mathematical symbols.
+
+* tokenvectorizer.py
+
+Tokenizer with the function and multi-process to pick up the vocabulary contained in the word vector dictionary. If the word vector dictionary contains upper / lower case variations, map to the most likely word without lowering everything.
